@@ -1,0 +1,58 @@
+:root {
+  --tiefsee: #0a2e4d;
+  --see: #12588f;
+  --aare: #1e8fb8;
+  --gletscher: #6cc3e0;
+  --grund: #061d33;
+  --text: #ffffff;
+  --leise: rgba(255, 255, 255, 0.78);
+  --glas: rgba(255, 255, 255, 0.10);
+  --rand: rgba(255, 255, 255, 0.22);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--see) 0%, var(--tiefsee) 45%, var(--grund) 100%) fixed;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+header img { width: 64px; height: 64px; border-radius: 16px; }
+header a { color: inherit; text-decoration: none; }
+header strong { font-size: 26px; letter-spacing: -0.3px; }
+
+h1 { font-size: 34px; line-height: 1.15; margin: 0 0 8px; letter-spacing: -0.5px; }
+h2 { font-size: 20px; margin: 0 0 8px; }
+p, li { color: var(--leise); }
+a { color: var(--gletscher); }
+
+.karte {
+  background: var(--glas);
+  border: 1px solid var(--rand);
+  border-radius: 24px;
+  padding: 20px 22px;
+  margin: 16px 0;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.leise { font-size: 14px; color: rgba(255, 255, 255, 0.6); }
+
+nav { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px; font-size: 15px; }
